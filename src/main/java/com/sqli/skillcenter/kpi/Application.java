@@ -50,7 +50,6 @@ public class Application {
             ResponseEntity<String> response = restTemplate.exchange(
                     URL_WebService_TBP + Activity_value, HttpMethod.GET, requestHeader, String.class);
             if (response.getStatusCode() == HttpStatus.OK) {
-                log.info("Request Successful");
                 CollabsService.saveCollabs(JsonParser.getCollabsFromJson(response.getBody()));
             } else {
                 String error = String.format("Request Failed : %s.", response.getStatusCode().toString());
@@ -60,8 +59,6 @@ public class Application {
     }
 
     private HttpHeaders buildHeader() {
-        log.debug("in buildHeader");
-        log.debug(API_client_id_name);
         HttpHeaders header = new HttpHeaders();
         header.setContentType(MediaType.APPLICATION_JSON);
         header.set(API_client_id_name, API_client_id_value);

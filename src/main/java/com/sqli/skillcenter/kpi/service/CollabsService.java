@@ -9,7 +9,7 @@ import java.util.List;
 
 
 public class CollabsService {
-    private static final Logger log = LoggerFactory.getLogger(Application.class);
+    private static final Logger log = LoggerFactory.getLogger(CollabsService.class);
 
     public static void saveCollabs(List<Collaborateur> collabs) {
         for (Collaborateur collab :

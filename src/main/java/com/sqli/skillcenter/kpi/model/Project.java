@@ -6,7 +6,7 @@ public class Project {
     private String nom;
     private String codeAgresso;
     private String client;
-    private String agance;
+    private String agence;
     private Date dateDebutTBP;
     private Date dateFinTBP;
 
@@ -16,11 +16,11 @@ public class Project {
     public Project (String caracteristiquesProjet){
         this.caracteristiquesProjet = caracteristiquesProjet;
     }
-    public Project(String nom, String codeAgresso, String client, String agance, Date dateDebutTBP, Date dateFinTBP) {
+    public Project(String nom, String codeAgresso, String client, String agence, Date dateDebutTBP, Date dateFinTBP) {
         this.nom = nom;
         this.codeAgresso = codeAgresso;
         this.client = client;
-        this.agance = agance;
+        this.agence = agence;
         this.dateDebutTBP = dateDebutTBP;
         this.dateFinTBP = dateFinTBP;
     }
@@ -49,12 +49,12 @@ public class Project {
         this.client = client;
     }
 
-    public String getAgance() {
-        return agance;
+    public String getAgence() {
+        return agence;
     }
 
-    public void setAgance(String agance) {
-        this.agance = agance;
+    public void setAgence(String agence) {
+        this.agence = agence;
     }
 
     public Date getDateDebutTBP() {
@@ -84,7 +84,7 @@ public class Project {
                 "nom='" + nom + '\'' +
                 ", codeAgresso='" + codeAgresso + '\'' +
                 ", client='" + client + '\'' +
-                ", agance='" + agance + '\'' +
+                ", agence='" + agence + '\'' +
                 ", dateDebutTBP=" + dateDebutTBP +
                 ", dateFinTBP=" + dateFinTBP +
                 '}';
