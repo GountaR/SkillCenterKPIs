@@ -1,30 +1,30 @@
 package com.sqli.skillcenter.kpi.model;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Projects {
-    private ArrayList<Project> projects;
+    private List<Project> projects;
 
-    public Projects(ArrayList<Project> projects) {
+    public Projects(List<Project> projects) {
         this.projects = projects;
     }
 
-    public ArrayList<Project> getProjects() {
+    public List<Project> getProjects() {
         return projects;
     }
 
-    public void setProjects(ArrayList<Project> projects) {
+    public void setProjects(List<Project> projects) {
         this.projects = projects;
     }
 
     @Override
     public String toString() {
         String str = "";
-        for (Project project:
-             projects) {
+        for (Project project :
+                projects) {
             str += project.toString();
         }
-        return "Projects{" + str+
+        return "Projects{" + str +
                 '}';
     }
 }
