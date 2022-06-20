@@ -1,6 +1,6 @@
 package com.sqli.skillcenter.kpi.service;
 
-import com.sqli.skillcenter.kpi.application.Application;
+import com.sqli.skillcenter.kpi.Application;
 import com.sqli.skillcenter.kpi.model.Collaborateur;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

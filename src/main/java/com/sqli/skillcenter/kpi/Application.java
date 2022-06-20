@@ -1,4 +1,4 @@
-package com.sqli.skillcenter.kpi.application;
+package com.sqli.skillcenter.kpi;
 
 import com.sqli.skillcenter.kpi.parser.JsonParser;
 import com.sqli.skillcenter.kpi.service.CollabsService;

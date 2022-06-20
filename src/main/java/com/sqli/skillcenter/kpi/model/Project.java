@@ -10,6 +10,12 @@ public class Project {
     private Date dateDebutTBP;
     private Date dateFinTBP;
 
+    private String caracteristiquesProjet;
+
+
+    public Project (String caracteristiquesProjet){
+        this.caracteristiquesProjet = caracteristiquesProjet;
+    }
     public Project(String nom, String codeAgresso, String client, String agance, Date dateDebutTBP, Date dateFinTBP) {
         this.nom = nom;
         this.codeAgresso = codeAgresso;
@@ -69,6 +75,11 @@ public class Project {
 
     @Override
     public String toString() {
+        if(this.nom == null){
+            return "Project{" +
+                    "caracteristiquesProjet='" + caracteristiquesProjet +
+                    '}';
+        }
         return "Project{" +
                 "nom='" + nom + '\'' +
                 ", codeAgresso='" + codeAgresso + '\'' +

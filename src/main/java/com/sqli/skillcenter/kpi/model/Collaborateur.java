@@ -15,6 +15,9 @@ public class Collaborateur {
     private String competences;
     private Projects projets;
 
+    public Collaborateur(){
+        super();
+    }
     public Collaborateur(String login, String nom, String prenom, Date date_arrivee, String profil_cout, String structure, String contrat, String profil_poste, String site, String competences, Projects projets) {
         this.login = login;
         this.nom = nom;
